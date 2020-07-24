@@ -53,7 +53,6 @@
             <li class="nav-item" id="themeButton">
             <a href="#" class="nav-link">
                 <svg
-                class="theme-icon"
                 id="lightIcon"
                 aria-hidden="true"
                 focusable="false"
@@ -62,7 +61,7 @@
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
+                class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x theme-icon"
                 >
                 <g class="fa-group">
                     <path
@@ -78,7 +77,6 @@
                 </g>
                 </svg>
                 <svg
-                class="theme-icon"
                 id="solarIcon"
                 aria-hidden="true"
                 focusable="false"
@@ -87,8 +85,7 @@
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="svg-inline--fa fa-sun fa-w-16 fa-7x"
-                >
+                class="svg-inline--fa fa-sun fa-w-16 fa-7x theme-icon">
                 <g class="fa-group">
                     <path
                     fill="currentColor"
@@ -116,7 +113,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-      .navbar {
+  .navbar {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
@@ -168,7 +165,7 @@ export default {
     margin: 0 1.5rem;
   }
   
-  /* .fa-primary {
+  /* .fa-primary { ********* NEED TO CHANGE THIS COLOR **************
     color: #ff7eee;
   } */
   
@@ -208,5 +205,93 @@ export default {
   
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
+  }
+
+  /* ----------- Media Queries ------------- */
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo svg
+    {
+      margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+
+  }
+  
+  .dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  
+  .light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+  }
+  
+  .solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8;
+  }
+  
+  .theme-icon {
+    display: none;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+  
+  .solar #solarIcon {
+    display: block;
   }
 </style>
