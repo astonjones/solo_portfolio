@@ -1,24 +1,24 @@
 <template>
   <div>
-    <!-- <h1>This is the home page of my app</h1> -->
-    <NavBar/>
+    <NavBar />
     <Header />
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
-import Header from './components/Header.vue'
+import NavBar from './components/NavBar';
+import Header from './components/Header';
 
 export default {
   name: 'App',
+
   components: {
     NavBar,
     Header
-  }
-}
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-
-</style>

@@ -9,9 +9,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 //fontawesome icons
 import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
 
 //adds mixins.css
 import '@/assets/css/mixins.css'
+
+import vuetify from './plugins/vuetify';
 
 Vue.use(Vuetify)
 Vue.use(BootstrapVue)
@@ -27,5 +30,6 @@ export default new Vuetify({
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')

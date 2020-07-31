@@ -22,8 +22,9 @@
             <hr>
             <div class="social">
                 <a href="https://www.linkedin.com/in/aston-jones">
-                    <i class="big linkedin icon"></i>
-                </a></div>
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </b-container>
       </header>
 </template>
@@ -55,5 +56,9 @@ export default {
     .bio{
         margin: var(--size6) 0;
         font-size: var(--size4);
+    }
+    .social{
+        font-size: var(--size6);
+        text-align: center;
     }
 </style>
