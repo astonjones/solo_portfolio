@@ -6,4 +6,96 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+
+    /* FONTS */
+
+    /* For a "playful" look use a rounded sans serif */
+
+    /* COLORS */
+
+    /* COOL GRAY */
+    --cool-gray0: hsl(209, 15%, 28%);
+    --cool-gray1: hsl(207, 12%, 43%);
+    --cool-gray2: hsl(207, 12%, 58%);
+    --cool-gray3: hsl(207, 16%, 76%);
+    --cool-gray4: hsl(207, 21%, 88%);
+    --cool-gray5: hsl(209, 25%, 98%);
+
+    /* ----------------- */
+    
+    /* FONT SIZES */
+    --font-size0: 12px;
+    --font-size1: 14px;
+    --font-size2: 16px;
+    --font-size3: 18px;
+    --font-size4: 20px;
+    --font-size5: 24px;
+    --font-size6: 26px;
+    --font-size7: 30px;
+    --font-size8: 36px;
+    --font-size42: 42px;
+    --font-size9: 48px;
+    --font-size10: 60px;
+    --font-size11: 72px;
+
+    /* ----------------- */
+
+
+    /* Font Weight */
+    --font-weight0: 400;
+    --font-weight1: 700;
+
+    /* ----------------- */
+
+    /* SIZES */
+    --size0: 4px;
+    --size1: 8px;
+    --size2: 12px;
+    --size3: 16px;
+    --size4: 24px;
+    --size5: 32px;
+    --size6: 48px;
+    --size7: 64px;
+    --size8: 96px;
+    --size9: 128px;
+    --size10: 192px;
+    --size11: 256px;
+    --size12: 290px;
+    --size-345: 345px;
+    --size13: 384px;
+    --size14: 512px;
+    --size15: 640px;
+    --size16: 768px;
+
+    /* SCREEN SIZES */
+
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl-sz: 1200;
+
+    /* Line Height */
+    
+    /* Box Shadows */
+
+    /* Border Radius */
+    --sm-b-rad: 10px;
+    --md-b-rad: 25px;
+
+
+    /* Border Width */
+
+    --bootstrap-card-border: 1px solid rgba(0, 0, 0, 0.125);
+
+    --border0: 1px;
+    --border1: 2px;
+    --border2: 3px;
+    --border3: 4px;
+    --border4: 5px;
+
+    /* Opacity */
   }
+
+body{
+  margin: 0;
+}

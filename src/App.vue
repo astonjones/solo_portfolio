@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
+  <div>
     <!-- <h1>This is the home page of my app</h1> -->
     <NavBar/>
+    <Header />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Header
   }
 }
 </script>
 
 <style>
-#app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
-}
+
 </style>

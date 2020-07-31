@@ -1,8 +1,8 @@
 <template>
-    <nav class="navbar">
-        <ul class="navbar-nav">
+    <nav class="naviBar">
+        <ul class="naviBar-nav">
             <li class="logo">
-            <a href="#" class="nav-link">
+            <a href="#" class="navi-link">
                 <span class="link-text logo-text">Aston J</span>
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +10,7 @@
                 focusable="false"
                 data-prefix="fas" 
                 data-icon="atom" 
-                class="svg-inline--fa fa-atom fa-w-14" 
+                class="svg-inline--fa fa-atom fa-w-14"
                 role="img" 
                 viewBox="0 0 448 512">
                 <path fill="currentColor"
@@ -21,14 +21,14 @@
             </li>
 
             <li class="nav-item">
-            <a href="#skills" class="nav-link">
+            <a href="#skills" class="navi-link">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wrench" class="svg-inline--fa fa-wrench fa-w-16" role="img" viewBox="0 0 512 512"><path class="fa-secondary" fill="currentColor" d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"/></svg>
                 <span class="link-text">Skills</span>
             </a>
             </li>
 
             <li class="nav-item">
-            <a href="#work" class="nav-link">
+            <a href="#work" class="navi-link">
                 <svg
                 xmlns="http://www.w3.org/2000/svg" 
                 aria-hidden="true" 
@@ -44,14 +44,14 @@
             </li>
 
             <li class="nav-item">
-            <a href="#contact" class="nav-link">
+            <a href="#contact" class="navi-link">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" viewBox="0 0 512 512"><path class="fa-secondary" fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
                 <span class="link-text">Contact</span>
             </a>
             </li>
 
             <li class="nav-item" id="themeButton">
-            <a href="#" class="nav-link">
+            <a href="#" class="navi-link">
                 <svg
                 id="lightIcon"
                 aria-hidden="true"
@@ -107,20 +107,20 @@
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'naviBar'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .navbar {
+  .naviBar {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
     /* overflow: scroll; */
   }
   
-  .navbar-nav {
+  .naviBar-nav {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -138,7 +138,7 @@ export default {
     margin-top: auto;
   }
   
-  .nav-link {
+  .navi-link {
     display: flex;
     align-items: center;
     height: 5rem;
@@ -148,7 +148,7 @@ export default {
     transition: var(--transition-speed);
   }
   
-  .nav-link:hover {
+  .navi-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
@@ -159,7 +159,7 @@ export default {
     margin-left: 1rem;
   }
   
-  .nav-link svg {
+  .navi-link svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
@@ -203,7 +203,7 @@ export default {
     transition: var(--transition-speed);
   }
   
-  .navbar:hover .logo svg {
+  .naviBar:hover .logo svg {
     transform: rotate(-180deg);
   }
 
@@ -211,7 +211,7 @@ export default {
 
   /* Small screens */
   @media only screen and (max-width: 600px) {
-    .navbar {
+    .naviBar {
       bottom: 0;
       width: 100vw;
       height: 5rem;
@@ -221,37 +221,37 @@ export default {
       display: none;
     }
   
-    .navbar-nav {
+    .naviBar-nav {
       flex-direction: row;
     }
   
-    .nav-link {
+    .navi-link {
       justify-content: center;
     }
   }
   
   /* Large screens */
   @media only screen and (min-width: 600px) {
-    .navbar {
+    .naviBar {
       top: 0;
       width: 5rem;
       height: 100vh;
     }
   
-    .navbar:hover {
+    .naviBar:hover {
       width: 16rem;
     }
   
-    .navbar:hover .link-text {
+    .naviBar:hover .link-text {
       display: inline;
     }
   
-    .navbar:hover .logo svg
+    .naviBar:hover .logo svg
     {
       margin-left: 11rem;
     }
   
-    .navbar:hover .logo-text
+    .naviBar:hover .logo-text
     {
       left: 0px;
     }
