@@ -4,6 +4,7 @@
     <Header />
     <SkillsSection />
     <WorkSection />
+    <HomeContactSection />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 import SkillsSection from './components/SkillsSection';
 import WorkSection from './components/WorkSection';
+import HomeContactSection from './components/HomeContactSection';
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     NavBar,
     Header,
     SkillsSection,
-    WorkSection
+    WorkSection,
+    HomeContactSection
   },
 
   data: () => ({
