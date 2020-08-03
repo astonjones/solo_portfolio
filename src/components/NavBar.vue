@@ -160,6 +160,7 @@ export default {
   }
   
   .navi-link svg {
+    font-size: var(--size6);
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;

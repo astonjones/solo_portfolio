@@ -3,7 +3,7 @@
         <b-container>
             <div class="hero-title-content">
                 <div class="hero-img">
-                    <img src="@/assets/AlsoMeCopy.jpg" />
+                    <img src="@/assets/images/AlsoMeCopy.jpg" />
                 </div>
                 <h1 class="hero-title">
                         Hi,

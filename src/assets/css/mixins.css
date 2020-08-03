@@ -99,3 +99,16 @@
 body{
   margin: 0;
 }
+
+/* SECTION TITLES */
+.section-title{
+  text-align: center;
+  margin: var(--size8) 0;
+  display: flex;
+}
+.title-side{
+  height: 2px;
+  width: 25%;
+  border: 1px solid #888888;
+  margin: auto;
+}
