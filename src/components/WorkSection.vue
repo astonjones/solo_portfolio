@@ -13,65 +13,24 @@
           <ul class="work-list">
 
             <!-- YelpCamp -->
-            <li class="work-item">
-              <a href="https://secret-bayou-18204.herokuapp.com" class="card-link">
+            <li v-for="workItem in workItems" :key="workItem.id" class="work-item">
+              <a :href="workItem.link" class="card-link">
               <div>
                     <b-card
-                    title="Yelp Camp"
-                    :img-src="require('../assets/images/yelpcampPic.png')"
+                    :title="workItem.title"
+                    :img-src="workItem.img"
                     img-alt="Image"
                     img-top
-                    tag="article"
                     class="card-image">
                           <b-card-text>
-                              Yelp for campgrounds. Sign in, post and comment on different campgrounds. Built with a RESTful API that I made, that also uses MongoDB. Give it a try, sign up and post a campground!
+                              {{ workItem.text }}
                           </b-card-text>
 
-                          <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
+                          <b-button variant="primary" :href="workItem.link">Go To Project</b-button>
                     </b-card>
               </div>
               </a>
             </li>
-
-            <!-- Exercise Tracker -->
-            <li class="work-item">
-              <div>
-                  <a href="https://floating-cliffs-22487.herokuapp.com/" class="card-link">
-                    <b-card
-                    title="Exercise Tracker"
-                    :img-src="require('../assets/images/exerciseTrackerPic.png')"
-                    img-alt="Image"
-                    img-top
-                    class="card-image">
-                          <b-card-text>
-                              A simple REACT app that logs exercises. Also built with MongoDB and a RESTful API that I made. Go ahead and log some exercises!
-                          </b-card-text>
-
-                          <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
-                    </b-card>
-                  </a>
-              </div>
-            </li>
-
-            <!-- Arcade Machine Build -->
-              <li class="work-item">
-                <div>
-                  <a href="https://imgur.com/gallery/1JoO7Gf" class="card-link">
-                    <b-card
-                    title="Arcade Machine"
-                    :img-src="require('../assets/images/arcadeMachine.png')"
-                    img-alt="Image"
-                    img-top
-                    class="card-image">
-                          <b-card-text>
-                              Built from scratch, and powered by raspberry pi. Not too much on the programming side, but was still a fun project.
-                          </b-card-text>
-
-                          <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
-                    </b-card>
-                  </a>
-                </div>
-              </li>
           </ul>
         </div>
         </b-container>
@@ -79,11 +38,39 @@
 </template>
 
 <script>
-// import yelpcampPic from '@/assets/images/yelpcampPic.png';
-// import exerciseTrackerPic from '@/assets/images/exerciseTrackerPic.png';
 
 export default {
     name: 'WorkSection',
+    data: function(){
+      return{
+        workItems: [
+          {
+            title: 'YelpCamp',
+            link: 'https://secret-bayou-18204.herokuapp.com',
+            img: require('../assets/images/yelpcampPic.png'),
+            text: 'Yelp for campgrounds. Sign in, post and comment on different campgrounds. Built with a RESTful API that I made, that also uses MongoDB. Give it a try, sign up and post a campground!'
+          },
+          {
+            title: 'Exercise Tracker',
+            link: 'https://floating-cliffs-22487.herokuapp.com',
+            img: require('../assets/images/exerciseTrackerPic.png'),
+            text: 'A simple REACT app that logs exercises. Also built with MongoDB and a RESTful API that I made. Go ahead and log some exercises!'
+          },
+          {
+            title: 'Artist Website',
+            link: 'https://www.keithcarterphotographs.com/',
+            img: require('../assets/images/carterSite.png'),
+            text: 'This is a website I regularly do maintanence on. The client is the renowned artist "Keith Carter."'
+          },
+          {
+            title: 'Arcade Machine',
+            link: 'https://imgur.com/gallery/1JoO7Gf',
+            img: require('../assets/images/arcadeMachine.png'),
+            text: 'Built from scratch, and powered by raspberry pi. Not too much on the programming side, but was still a fun project.'
+          }
+        ]
+      }
+    }
 }
 </script>
 
@@ -101,6 +88,7 @@ export default {
       z-index: 1;
     }
     .section-subtext{
+      font-size: var(--size4);
         margin: var(--size6) 0;
         text-align: center;
     }

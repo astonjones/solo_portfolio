@@ -14,7 +14,7 @@
                     <textarea placeholder="Tell me anything!" class="text-area" name="message"/>
                 </div>
                 <div class="submit-button-container">
-                    <button type="submit">Submit</button>
+                    <b-button variant="primary" type="submit">Submit</b-button>
                 </div>
             </fieldset>
         </form>
@@ -84,7 +84,6 @@ export default {
 
     .submit-button-container button{
         width: 100%;
-        background-color: var(--cool-gray4);
         padding: var(--size0);
     }
 
@@ -134,21 +133,5 @@ export default {
         .small-input:first-of-type {
             margin-bottom: var(--size5)
         }
-    }
-
-    @media only screen and (min-width: 576px) (max-width: 768px){
-
-    }
-
-    @media only screen and (min-width: 768px) (max-width: 992px){
-
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1200px){
-
-    }
-
-    @media only screen and (min-width: 1200px){
-
     }
 </style>

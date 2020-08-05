@@ -70,7 +70,6 @@ export default {
 
     .contact-form {
         margin: auto;
-        z-index: -1;
     }
 
     .notification {

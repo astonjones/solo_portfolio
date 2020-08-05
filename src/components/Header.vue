@@ -12,10 +12,15 @@
             </div>
             <div class="bio">
                 <p>
-                    I was born and raised in a small town of Vidor, TX. I am currently a Junior at Lamar University in Beaumont, TX.
-                    I strive to one day become a software engineer and I am working at it everyday.
-                    I say that I have a passion for learning and a knack for building and making things come to life.
-                    I thouroughly enjoy engaging in projects with a team and seeing the accomplishment through.
+                    I am a <b>junior fullstack developer</b> and a <b>software engineer</b> in the making.
+                    I can help fill programming needs and solve any problems that come my way. I help build,
+                    and maintain <b>websites</b>, deal with <b>APIs</b>, and supply <b>backend</b> business logic in applications.
+                    I lack creative design work, but can put together front end material with an exisitng clear picture built.
+                    <br>
+                    <br>
+                    I am currently attending Lamar University to get my degree in Computer Science and Mathematics.
+                    I am passionate about learning and solving problems. In my freetime, I am working on projects
+                    or learning new things to add to my toolkit.
                 </p>
             </div>
             <!-- text break -->
