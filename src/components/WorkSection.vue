@@ -14,61 +14,62 @@
 
             <!-- YelpCamp -->
             <li class="work-item">
-              <!-- <a href="https://secret-bayou-18204.herokuapp.com"> -->
+              <a href="https://secret-bayou-18204.herokuapp.com" class="card-link">
               <div>
-                  <b-card
-                  title="Yelp Camp"
-                  :img-src="require('../assets/images/yelpcampPic.png')"
-                  img-alt="Image"
-                  img-top
-                  tag="article"
-                  class="card-image">
-                        <b-card-text>
-                            Yelp for campgrounds. Sign in, post and comment on different campgrounds. Built with a RESTful API that I made, that also uses MongoDB. Give it a try, sign up and post a campground!
-                        </b-card-text>
+                    <b-card
+                    title="Yelp Camp"
+                    :img-src="require('../assets/images/yelpcampPic.png')"
+                    img-alt="Image"
+                    img-top
+                    tag="article"
+                    class="card-image">
+                          <b-card-text>
+                              Yelp for campgrounds. Sign in, post and comment on different campgrounds. Built with a RESTful API that I made, that also uses MongoDB. Give it a try, sign up and post a campground!
+                          </b-card-text>
 
-                        <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
-                  </b-card>
+                          <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
+                    </b-card>
               </div>
-            <!-- </a> -->
+              </a>
             </li>
 
             <!-- Exercise Tracker -->
             <li class="work-item">
               <div>
-                  <b-card
-                  title="Exercise Tracker"
-                  :img-src="require('../assets/images/exerciseTrackerPic.png')"
-                  img-alt="Image"
-                  img-top
-                  class="card-image">
-                    <!-- <a href="https://floating-cliffs-22487.herokuapp.com/" class="image">
-                        <img src="/exerciseTrackerPic.png">
-                    </a> -->
-                        <b-card-text>
-                            A simple REACT app that logs exercises. Also built with MongoDB and a RESTful API that I made. Go ahead and log some exercises!
-                        </b-card-text>
+                  <a href="https://floating-cliffs-22487.herokuapp.com/" class="card-link">
+                    <b-card
+                    title="Exercise Tracker"
+                    :img-src="require('../assets/images/exerciseTrackerPic.png')"
+                    img-alt="Image"
+                    img-top
+                    class="card-image">
+                          <b-card-text>
+                              A simple REACT app that logs exercises. Also built with MongoDB and a RESTful API that I made. Go ahead and log some exercises!
+                          </b-card-text>
 
-                        <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
-                  </b-card>
+                          <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
+                    </b-card>
+                  </a>
               </div>
             </li>
 
             <!-- Arcade Machine Build -->
               <li class="work-item">
                 <div>
-                  <b-card
-                  title="Arcade Machine"
-                  :img-src="require('../assets/images/arcadeMachine.png')"
-                  img-alt="Image"
-                  img-top
-                  class="card-image">
-                        <b-card-text>
-                            Built from scratch, and powered by raspberry pi. Not too much on the programming side, but was still a fun project.
-                        </b-card-text>
+                  <a href="https://imgur.com/gallery/1JoO7Gf" class="card-link">
+                    <b-card
+                    title="Arcade Machine"
+                    :img-src="require('../assets/images/arcadeMachine.png')"
+                    img-alt="Image"
+                    img-top
+                    class="card-image">
+                          <b-card-text>
+                              Built from scratch, and powered by raspberry pi. Not too much on the programming side, but was still a fun project.
+                          </b-card-text>
 
-                        <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
-                  </b-card>
+                          <b-button variant="primary" href="https://floating-cliffs-22487.herokuapp.com/">Go To Project</b-button>
+                    </b-card>
+                  </a>
                 </div>
               </li>
           </ul>
@@ -95,6 +96,10 @@ export default {
         margin: 0;
         padding: 0;
     }
+    .card-link{
+      color: black;
+      z-index: 1;
+    }
     .section-subtext{
         margin: var(--size6) 0;
         text-align: center;
@@ -102,6 +107,6 @@ export default {
     .work-item{
         width: var(--size13);
         margin: var(--size4);
-        z-index: -1;
+        /* z-index: -1; */
     }
 </style>

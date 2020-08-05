@@ -1,6 +1,6 @@
 <template>
     <b-container>
-        <b-row cols="1" cols-lg="2" class="contact-section">
+        <b-row cols="1" cols-lg="2" id="contact-section" class="contact-section">
             <b-col class="contact-text">
                 <h2>Reach Out to Me</h2>
                 <h4>Let me know if I can help you out in anyway, or if you just want to chat!</h4>
@@ -70,6 +70,7 @@ export default {
 
     .contact-form {
         margin: auto;
+        z-index: -1;
     }
 
     .notification {

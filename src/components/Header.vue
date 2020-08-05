@@ -46,11 +46,11 @@ export default {
         align-items: center;
     }
     .hero-img img{
-        width: var(--size12);
+        width: var(--size9);
         border-radius: var(--md-b-rad);
     }
     h1{
-        font-size: var(--size8);
+        font-size: var(--size6);
         font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     }
     .bio{
@@ -60,5 +60,26 @@ export default {
     .social{
         font-size: var(--size6);
         text-align: center;
+    }
+
+    /* RESPONSIVENESS */
+    /* Small devices and up */
+    @media only screen and (min-width: 576px) {
+        .hero-img img{
+            width: var(--size10);
+        }
+        h1 {
+            font-size: var(--size7);
+        }
+    }
+
+    /* mid sizes and up */
+    @media only screen and (min-width: 991px) {
+        .hero-img img{
+            width: var(--size12);
+        }
+        h1 {
+            font-size: var(--size8);
+        }
     }
 </style>
