@@ -83,6 +83,11 @@ export default {
         margin: 0;
         padding: 0;
     }
+    .card img{
+      height: var(--size13);
+      width: 100%;
+      object-fit: cover;
+    }
     .card-link{
       color: black;
       z-index: 1;
